@@ -97,7 +97,13 @@ const Game = () => {
 
       <motion.button
         className="reset-btn"
-        onClick={() => setPlayerChoice(null)}
+        onClick={() => {
+          setPlayerChoice(null);
+          setComputerChoice(null);
+          setResult("");
+          setPlayerScore(0);
+          setComputerScore(0);
+        }}
         whileHover={{ scale: 1.1 }}
       >
         Reset Game
